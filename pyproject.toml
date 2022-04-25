@@ -1,8 +1,13 @@
 [tool.poetry]
 name = "NetSM"
 version = "0.1.0"
-description = ""
+description = "Cross-platform lib for network speed monitoring in Python"
+license = "MIT"
 authors = ["XavierJiezou <878972272@qq.com>"]
+readme = "README.md"
+repository = "https://github.com/XavierJiezou/NetSM"
+homepage = "https://github.com/XavierJiezou/NetSM"
+keywords = ["network speed", "monitor"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
