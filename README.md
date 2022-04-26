@@ -1,5 +1,7 @@
 # NetSM
 
+Cross-platform lib for network speed monitoring in Python.
+
 ## Install
 
 ```bash
