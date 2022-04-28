@@ -1,21 +1,33 @@
 [tool.poetry]
 name = "NetSM"
-version = "0.1.1"
+version = "0.1.0"
 description = "Cross-platform lib for network speed monitoring in Python"
 license = "MIT"
 authors = ["XavierJiezou <878972272@qq.com>"]
+maintainers = []
 readme = "README.md"
-repository = "https://github.com/XavierJiezou/NetSM"
 homepage = "https://github.com/XavierJiezou/NetSM"
+repository = "https://github.com/XavierJiezou/NetSM"
+documentation = "https://github.com/XavierJiezou/NetSM"
 keywords = ["network speed", "monitor"]
+classifiers = ["Topic :: System :: Networking :: Monitoring"]
+packages = [{ include = "netsm" }]
+include = ["CHANGELOG.md"]
+exclude = []
+
+[tool.poetry.build]
+generate-setup-file = false
 
 [tool.poetry.dependencies]
 python = "^3.9"
+fire = "^0.4.0"
 psutil = "^5.9.0"
+rich = "^12.3.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
 autopep8 = "^1.6.0"
+toml = "^0.10.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
@@ -25,3 +37,13 @@ build-backend = "poetry.core.masonry.api"
 name = "tsinghua-pypi"
 url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 default = true
+
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+testpaths = ["tests", "integration"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test"
+
+[tool.poetry.scripts]
+netsm = "netsm.cli:main"

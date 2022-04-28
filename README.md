@@ -1,5 +1,7 @@
 # NetSM
 
+Cross-platform lib for network speed monitoring in Python.
+
 ## Install
 
 ```bash
@@ -8,7 +10,7 @@ pip install netsm
 
 ## Usage
 
-`$ netsm`
+`$ netsm show`
 
 ## Changelog
 
@@ -20,4 +22,6 @@ See [CHANGELOG.md](CHANGELOG.md)
 
 ## References
 
-- [https://github.com/wookayin/gpustat](https://github.com/wookayin/gpustat)
+- [gpustat](https://github.com/wookayin/gpustat)
+- [Python Packaging User Guide](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+- [psutil documentation](https://psutil.readthedocs.io/en/latest/#network)
