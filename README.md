@@ -11,6 +11,16 @@
 
 Cross-platform lib for network speed monitoring in Python.
 
+## Demo
+
+### Linux
+
+![Linux](images/Linux.png)
+
+### Windows
+
+![Winodws](images/Windows.png)
+
 ## Install
 
 ```bash
