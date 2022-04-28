@@ -1,4 +1,0 @@
---index-url https://pypi.tuna.tsinghua.edu.cn/simple
-
-easydict==1.9
-psutil==5.9.0; (python_version >= "2.6" and python_full_version < "3.0.0") or (python_full_version >= "3.4.0")
