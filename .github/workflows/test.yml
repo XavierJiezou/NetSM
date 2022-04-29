@@ -6,8 +6,6 @@ on:
       - "*.*.*"
     paths-ignore:
       - "docs/**"
-    branches:
-      - main
   pull_request:
     paths-ignore:
       - "docs/**"
