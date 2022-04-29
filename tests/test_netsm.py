@@ -1,6 +1,7 @@
 from netsm import __version__
 from netsm.core import NetSM
 import toml
+import sys
 
 
 def test_version():
@@ -13,7 +14,10 @@ def test_netsm():
     netsm = NetSM()
     speed = netsm.speed
     addrs = netsm.addrs
-    assert len(speed) == len(addrs)
+    if sys.platform == 'darwin':  # macOS
+        assert len(speed) == len(addrs)+2
+    else:  # Linux and Windows
+        assert len(speed) == len(addrs)
 
 
 def test_format():

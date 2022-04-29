@@ -10,7 +10,6 @@ class NetSM:
     def addrs(self):
         addrs = {}
         netad = psutil.net_if_addrs()
-        print(netad)
         for nic in netad:
             addrs[nic] = {}
             if len(netad[nic]) == 1:
