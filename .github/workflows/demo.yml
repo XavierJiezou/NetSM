@@ -1,6 +1,9 @@
 name: Demo
 
-on: [push]
+on:
+  push:
+    tags:
+      - "*.*.*"
 
 jobs:
   run:
