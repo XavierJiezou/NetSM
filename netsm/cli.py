@@ -35,20 +35,25 @@ def generate_table() -> Table:
 
 class NetSMCLI:
     def __init__(self):
+        """Initialization
+        """
         pass
 
-    def show(self) -> None:
+    def show(self, incessant: bool = True) -> None:
         """Shows information about networks.
 
-        Returns:
-            str: Information for networks.
+        Args:
+            incessant (bool, optional): Whether it is always displayed on the console. Defaults to True.
         """
         with Live(generate_table()) as live:
-            while True:
-                try:
-                    live.update(generate_table())
-                except KeyboardInterrupt:
-                    return
+            if incessant:
+                while True:
+                    try:
+                        live.update(generate_table())
+                    except KeyboardInterrupt:
+                        return
+            else:
+                live.update(generate_table())
 
     def version(self) -> str:
         """Shows the version of the project.

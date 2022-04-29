@@ -24,7 +24,7 @@ jobs:
           pip install toml
           pip install pytest
           pip install pytest-cov
-          pytest --cov=./ --cov-report=xml
+          pytest --cov=./ --cov-report=xml tests/
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
         with:

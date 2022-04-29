@@ -21,4 +21,4 @@ jobs:
       - name: Install NetSM
         run: pip install netsm
       - name: Shows information about networks
-        run: netsm show
+        run: netsm show --incessant False
