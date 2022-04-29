@@ -20,5 +20,7 @@ jobs:
           python-version: 3.7
       - name: Install NetSM
         run: pip install netsm
+      - name: Shows the version of the project
+        run: netsm version
       - name: Shows information about networks
         run: netsm show --incessant False
