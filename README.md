@@ -1,6 +1,8 @@
 # NetSM
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/XavierJiezou/NetSM/Release)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/4b2dcde7f09548f5a49df43fbb0c3beb)](https://www.codacy.com/gh/XavierJiezou/NetSM/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=XavierJiezou/NetSM&amp;utm_campaign=Badge_Grade)
+![Codecov](https://img.shields.io/codecov/c/github/XavierJiezou/NetSM)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/netsm)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/netsm)
 ![PyPI](https://img.shields.io/pypi/v/netsm)

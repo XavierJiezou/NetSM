@@ -1,6 +1,9 @@
 name: Codecov
 
-on: [push]
+on:
+  push:
+    tags:
+      - "*.*.*"
 
 jobs:
   run:
