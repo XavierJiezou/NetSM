@@ -11,7 +11,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/XavierJiezou/NetSM)](https://github.com/XavierJiezou/NetSM/issues)
 [![GitHub license](https://img.shields.io/github/license/XavierJiezou/NetSM)](https://github.com/XavierJiezou/NetSM/blob/main/LICENSE)
 
-Cross-platform lib for network speed monitoring in Python.
+Cross-platform Lib for Network Speed Monitoring in Python.
 
 ## Demo
 
