@@ -12,7 +12,7 @@ def test_version():
 
 def test_netsm():
     netsm = NetSM()
-    speed = netsm.speed
+    speed = netsm.speed()
     addrs = netsm.addrs
     if sys.platform == 'darwin':  # macOS
         assert len(speed) == len(addrs)+2
@@ -24,10 +24,10 @@ def test_format():
     netsm = NetSM()
     for i in range(100):
         speed = 1024*i
-        assert 8 <= len(netsm.__format__(speed)) <= 9
+        assert 8 <= len(netsm._format_speed(speed)) <= 9
     for i in range(100, 1000):
         speed = 1024*i
-        assert len(netsm.__format__(speed)) == 8
+        assert len(netsm._format_speed(speed)) == 8
     for i in range(1000, int(1e5)):
         speed = 1024*i
-        assert 'M' in netsm.__format__(speed)
+        assert 'M' in netsm._format_speed(speed)
