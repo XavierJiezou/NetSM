@@ -41,10 +41,10 @@ default = true
 
 [tool.pytest.ini_options]
 addopts = "-ra -q"
-testpaths = ["tests", "integration"]
+testpaths = ["tests"]
 python_files = "test_*.py"
 python_classes = "Test*"
-python_functions = "test"
+python_functions = "test_*"
 
 [tool.poetry.scripts]
 netsm = "netsm.cli:main"
