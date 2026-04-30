@@ -17,7 +17,12 @@ class NetSM:
             inet_addr = next(
                 (s for s in snicaddrs if s.family.name == 'AF_INET'), None
             )
-            chosen = inet_addr if inet_addr is not None else (snicaddrs[0] if snicaddrs else None)
+            if inet_addr is not None:
+                chosen = inet_addr
+            elif snicaddrs:
+                chosen = snicaddrs[0]
+            else:
+                chosen = None
             if chosen is not None:
                 addrs[nic]['family'] = chosen.family.name
                 addrs[nic]['address'] = chosen.address
